@@ -5,21 +5,21 @@
 class Lode < Formula
   desc "Fast, drop-in compatible reimplementation of DVC's data-versioning core, in Go"
   homepage "https://github.com/getlode/lode"
-  version "0.1.1"
-  license "AGPL-3.0"
+  version "0.1.2"
+  license "MPL-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/getlode/lode/releases/download/v0.1.1/lode_0.1.1_darwin_amd64.tar.gz"
-      sha256 "f4e22ebedbc6242dc60385bd0b3e0b02e663225cd403037399521ccc141019fa"
+      url "https://github.com/getlode/lode/releases/download/v0.1.2/lode_0.1.2_darwin_amd64.tar.gz"
+      sha256 "3aa7e05a459483930a4396f07685f5b341838e604d67aa323d3f36dccdbfe5e6"
 
       def install
         bin.install "lode"
       end
     end
     on_arm do
-      url "https://github.com/getlode/lode/releases/download/v0.1.1/lode_0.1.1_darwin_arm64.tar.gz"
-      sha256 "76256a97304ad9ea484a50f6d306adc2fd11ce036301fb4102a5d0e1ba8c2128"
+      url "https://github.com/getlode/lode/releases/download/v0.1.2/lode_0.1.2_darwin_arm64.tar.gz"
+      sha256 "6b159eaa52c95614097902ab8c53f64f8226c0345eba85c934fb2f57d22247a7"
 
       def install
         bin.install "lode"
@@ -30,8 +30,8 @@ class Lode < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/getlode/lode/releases/download/v0.1.1/lode_0.1.1_linux_amd64.tar.gz"
-        sha256 "97483c0ec9c79f3c12b7720eb79fba49bb5917c8a82705fa5538f776d28bdabe"
+        url "https://github.com/getlode/lode/releases/download/v0.1.2/lode_0.1.2_linux_amd64.tar.gz"
+        sha256 "ae4ea12c8c4090fe12f300d7dbde0639a3c77b020b8c8be69b9b5721557069f3"
 
         def install
           bin.install "lode"
@@ -40,8 +40,8 @@ class Lode < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/getlode/lode/releases/download/v0.1.1/lode_0.1.1_linux_arm64.tar.gz"
-        sha256 "f75d35f2dc84421bb3e01387a587d6f530a815f44b7e0db45b93d58d546fc2e5"
+        url "https://github.com/getlode/lode/releases/download/v0.1.2/lode_0.1.2_linux_arm64.tar.gz"
+        sha256 "e86e32b6034c7d694a467f4e8dbd60ef7696fa77b9971553007b6c1971768cbf"
 
         def install
           bin.install "lode"
